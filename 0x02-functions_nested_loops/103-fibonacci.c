@@ -5,7 +5,7 @@
  *
  * Description: Calculates the sum of even fib numbers
  * lower than 4,000,000
- * 
+ *
  * Return: Always 0(success)
  */
 
