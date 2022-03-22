@@ -31,7 +31,7 @@ int idx_num_starts(char *s)
 
 	for (i = 0; i < _strlen(s); i++)
 	{
-		if (s[i] >= '0' && s[i] <= '9')	
+		if (s[i] >= '0' && s[i] <= '9')
 			return (i);
 	}
 	return (-1); /* return -1 if no digits found */
@@ -48,7 +48,7 @@ int find_sign(char *s)
 
 	while (i < (idx_num_starts(s)))
 	{
-		if (s[i++] == '-')	
+		if (s[i++] == '-')
 			negatives++;
 	}
 
@@ -81,15 +81,15 @@ int _atoi(char *s)
 
 	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9')
 			&& (idx_digit_starts <= _strlen(s))) /* count digits to print */
-	{								
+	{
 		digits_to_print += 1;
 		idx_digit_starts++;
 	}
 
 	i = 1;
-	while (i < digits_to_print) /* find powers of ten to multiply places */					
+	while (i < digits_to_print) /* find powers of ten to multiply places */				
 	{
-		t *= 10;					
+		t *= 10;
 		i++;								}
 
 							
