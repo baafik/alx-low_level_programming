@@ -14,7 +14,7 @@ void print_rev(char *s)
 	/* iterate to find length of string and point to last character */
 	while (*s != '\0')
 	{
-		len++;						
+		len++;
 		++s;
 	}
 

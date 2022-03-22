@@ -87,12 +87,11 @@ int _atoi(char *s)
 	}
 
 	i = 1;
-	while (i < digits_to_print) /* find powers of ten to multiply places */				
+	while (i < digits_to_print) /* find powers of ten to multiply places */
 	{
 		t *= 10;
 		i++;								}
 
-							
 	for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
 	{
 		num += (s[i] - '0') * t;
