@@ -1,4 +1,4 @@
-#include "main.h"
+#include "c_functions.h"
 
 /**
  * sum_them_all - add the integers
